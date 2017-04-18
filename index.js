@@ -38,6 +38,13 @@ server.get("/about", (req, res) => {
 	});
 });
 
+server.get("/projects", (req, res) => {
+	res.render("projects.hbs", {
+		title: "Projects",
+		message: "Portfolio page here."
+	});
+});
+
 server.listen(port, () => {
 	console.log("Server is running...");
 });
