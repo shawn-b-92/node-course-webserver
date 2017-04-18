@@ -15,9 +15,9 @@ server.use((req, res, next) => {
 	next();
 });
 
-server.use((req, res, next) => {
+/*server.use((req, res, next) => {
 	res.render("maintenance.hbs")
-});
+});*/
 
 server.use(express.static("./views"));
 
